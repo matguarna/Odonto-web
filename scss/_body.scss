@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+5,7db9e8+99&1+0,1+21,1+21,0.7+98,0+100 */
+  background: -moz-linear-gradient(
+    top,
+    #1e5799 0%,
+    #1e5799 5%,
+    #2e68a6 21%,
+    rgba(124, 184, 231, 0.7) 98%,
+    rgba(125, 185, 232, 0.35) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #1e5799 0%,
+    #1e5799 5%,
+    #2e68a6 21%,
+    rgba(124, 184, 231, 0.7) 98%,
+    rgba(125, 185, 232, 0.35) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1e5799 0%,
+    #1e5799 5%,
+    #2e68a6 21%,
+    rgba(124, 184, 231, 0.7) 98%,
+    rgba(125, 185, 232, 0.35) 99%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
+  /* IE6-9 */
+  /*shaperdivider/Fondo del body*/
+  .custom-shape-divider-top-1633634660 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-top-1633634660 svg {
+    position: relative;
+    display: block;
+    width: calc(173% + 1.3px);
+    height: 82px;
+  }
+
+  .custom-shape-divider-top-1633634660 .shape-fill {
+    fill: #ffffff;
+  }
+}

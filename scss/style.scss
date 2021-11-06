@@ -1,0 +1,168 @@
+@import "body";
+@import "menu";
+@import "footer";
+@import "botones";
+@import "main_nosotros";
+@import "variables";
+
+/*Tipografia*/
+.comfortaa {
+  font-family: comfortaa, cursive;
+}
+
+/*Nombre empresa*/
+.oPacheco {
+  width: 30%;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  /*1rem = 16px*/
+}
+
+/*Index*/
+#sIntegral {
+  margin: 100px auto;
+  padding: 10px;
+  width: 50%;
+  color: white;
+  border: solid;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.textoServicio1 {
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  line-height: 20px;
+}
+
+.textoServicio2 {
+  @extend .textoServicio1;
+  font-size: 20px;
+  width: 90%;
+}
+
+.textoServicio3 {
+  @extend .textoServicio1;
+  font-size: 22px;
+  width: 90%;
+}
+
+/*Responsive index*/
+@media only screen and (max-width: 768px) {
+  /*de 0px a 768px se dan estas propiedades*/
+  #sIntegral {
+    color: #d4d10d;
+    font-size: 30px;
+  }
+  body {
+    background-color: rgba(255, 0, 242, 0.836);
+  }
+  .botones {
+    margin: 100px auto;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  footer {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*de 768px a infinito*/
+  body {
+    background-color: salmon;
+  }
+  #sIntegral {
+    color: salmon;
+    font-size: 35px;
+  }
+  footer {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*de 1024px a infinito*/
+  #sIntegral {
+    font-size: 50px;
+    color: #c0fffa;
+  }
+  footer {
+    font-size: 100%;
+  }
+}
+
+/*Tratamientos*/
+.titulo-tratamientos {
+  padding: 25px;
+  margin: $margin-tratamientos/2;
+}
+
+/*Grids en tratamientos*/
+.container-grid-tratamientos {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "main imagenes imagenes";
+  .header-grid-tratamientos {
+    grid-area: header;
+  }
+  .main-grid-tratamientos {
+    grid-area: main;
+    font-size: 25px;
+    /*Tratamientos*/
+    .main-grid-tratamientos__lista > li {
+      /*trucaso para poner en lista los items*/
+      display: block;
+      list-style-type: circle;
+      margin: 5px;
+      padding: 5px;
+      font-size: 18px;
+    }
+  }
+  .imagenes-grid-tratamientos {
+    grid-area: imagenes;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    .imagenes-grid-tratamientos__img {
+      border: 2px black solid;
+      margin: 10px;
+      opacity: 75%;
+      &:hover {
+        border: 1px black solid;
+        color: white;
+        opacity: 100%;
+      }
+    }
+  }
+}
+
+/*Contacto*/
+.main-contacto {
+  .main-contacto__texto {
+    color: white;
+    font-size: 18px;
+    margin: 20px;
+    padding: 5px;
+  }
+}
+
+/*Formulario*/
+.formulario {
+  background-color: #a5e3f7;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+}

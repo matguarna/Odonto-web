@@ -1,0 +1,24 @@
+/*Nosotros*/
+.main-nosotros {
+  .main-nosotros__texto {
+    padding: 10px;
+    margin: 10px;
+    line-height: 18px;
+    color: white;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+  }
+  .main-nosotros__equipo {
+    margin: 20px;
+    text-align: center;
+  }
+  .main-nosotros__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    .carousel-text {
+      background: rgba(0, 0, 0, 0.185);
+    }
+  }
+}
