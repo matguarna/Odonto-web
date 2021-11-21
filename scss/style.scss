@@ -57,9 +57,7 @@
     color: #d4d10d;
     font-size: 30px;
   }
-  body {
-    background-color: rgba(255, 0, 242, 0.836);
-  }
+
   .botones {
     margin: 100px auto;
     padding: 10px;
@@ -73,11 +71,19 @@
   }
 }
 
+.index-mapa {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  .index-mapa_datos {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /*de 768px a infinito*/
-  body {
-    background-color: salmon;
-  }
+
   #sIntegral {
     color: salmon;
     font-size: 35px;
